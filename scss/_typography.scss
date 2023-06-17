@@ -1,0 +1,179 @@
+@use 'helpers' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+
+.list--link {
+  @include fontStyle ('Open Sans', 400, 14px, 18px, $color--white);
+}
+
+.heading-h3 {
+  @include fontStyle('Montserrat', 700, 44px, 54px, $color--dark-blue);
+  text-align: center;
+  padding-top: 30px;
+
+  &__color {
+    @include fontStyle('Montserrat', 700, 44px, 54px, $color--white);
+    text-align: center;
+    padding-top: 150px;
+  }
+
+  &__heading-form {
+    @include fontStyle('Montserrat', 700, 44px, 54px, $color--dark-blue);
+    text-align: center;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .heading-h3 {
+    font-size: 30px;
+
+    &__color {
+      font-size: 30px;
+      padding-top: 120px;
+    }
+
+    &__heading-form {
+      font-size: 30px;
+      padding-top: 10px;
+    }
+  }
+}
+
+.heading-h3__without-line {
+  @include fontStyle('Montserrat', 700, 44px, 54px, $color--dark-blue);
+  margin-top: 0;
+  width: 500px;
+}
+
+.form--text,
+.form--link,
+.form--style {
+  @include fontStyle('Open Sans', 400, 14px, 28px, $color--black);
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 376px) {
+  .form--text,
+  .form--link,
+  .form--style {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+}
+
+.heading-h1 {
+  @include fontStyle('Montserrat', 700, 80px, 98px, $color--white);
+  margin-top: 240px;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .heading-h1 {
+    font-size: 60px;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .heading-h1 {
+    font-size: 25px;
+  }
+}
+
+.heading-h4 {
+  @include fontStyle('Montserrat', 400, 18px, 22px, $color--white);
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 376px) {
+  .heading-h4 {
+    font-size: 15px;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+.heading-h5 {
+  @include fontStyle('Montserrat', 400, 22px, 26px, $color--dark-blue);
+  margin: 0;
+}
+
+.paragraphe--text {
+  max-width: 470px;
+  @include fontStyle('Open Sans', 400, 18px, 30px, $color--dark-blue);
+}
+
+.subtitles--text {
+  @include fontStyle('Open Sans', 400, 15px, 20px, $color--black);
+  font-style: italic;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .heading-h5 {
+    font-size: 18px;
+  }
+
+  .heading-h3__without-line {
+    font-size: 30px;
+    margin-bottom: 0px;
+    width: 330px;
+  }
+
+  .paragraphe--text {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .subtitles--text {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .heading-h3__without-line {
+    width: 350px;
+  }
+}
+
+.title-card {
+  @include fontStyle('Montserrat', 700, 18px, 22px, $color--dark-blue);
+  width: 280px;
+}
+
+.avatar--name {
+  @include fontStyle('Montserrat', 400, 18px, 22px, $color--dark-blue);
+  margin-bottom: 6px;
+}
+
+.avatar--date {
+  @include fontStyle('Montserrat', 400, 14px, 17px, $color--light-blue);
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .title-card {
+    font-size: 16px;
+    width: 220px;
+  }
+
+  .avatar--name {
+    font-size: 12px;
+  }
+
+  .avatar--date {
+    font-size: 12px;
+  }
+}
+
+.text-copyright {
+  @include fontStyle('Montserrat', 400, 14px, 17px, $color--white);
+}
+

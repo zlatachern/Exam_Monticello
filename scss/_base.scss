@@ -1,0 +1,56 @@
+@use 'helpers' as *;
+
+* {
+  box-sizing: border-box;
+  // outline: 1px solid red;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #c17bd4 0%, #708ad4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button--primary {
+  @include fontStyle('Montserrat', 400, 18px, 27px, $color--black);
+  text-align: center;
+  background-color: $color--white;
+  border: 1px solid $color--dark-blue;
+  padding: 4px;
+}

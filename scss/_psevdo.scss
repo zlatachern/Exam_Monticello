@@ -1,0 +1,150 @@
+@use 'helpers' as *;
+
+// Marker list
+.navigation__list {
+  .list--item {
+    position: relative; 
+    padding-left: 20px; 
+    list-style: none;
+    
+    &::before {
+      content: ""; 
+      position: absolute; 
+      top: 50%; 
+      left: 0; 
+      transform: translateY(-50%); 
+      width: 5px; 
+      height: 5px; 
+      border: 2px solid $color--white; 
+      border-radius: 50%; 
+      background-color: transparent;
+    }
+
+    &:hover::before {
+      background-color: $color--white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation__list {
+    .list--item {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 180px;
+      }
+    }
+  }
+}
+
+.heading-h3 {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 100px;
+    height: 0;
+    border: 1px solid #2C4058;
+    position: absolute;
+    top: 0px;
+    left: 520px;
+  }
+
+  &__heading-form {
+    &::before {
+    content: '';
+    width: 100px;
+    height: 0;
+    border: 1px solid #2C4058;
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .heading-h3__heading-form::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading-h3::before {
+    left: 300px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .heading-h3::before {
+    left: 130px;
+  }
+}
+
+.heading-h3__color {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 100px;
+    height: 0;
+    border: 1px solid $color--white;
+    position: absolute;
+    top: 90px;
+    left: 520px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading-h3__color::before {
+    left: 300px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .heading-h3__color::before {
+    left: 130px;
+  }
+}
+
+.big-photo:hover::before,
+.small-photo:hover::before {
+  content: '';
+  background: url('../img/logo_social/bi_zoom-in.svg');
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 20%;
+  height: 20%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.form--name::placeholder {
+  color: $color--black;
+}
+
+// Buttons
+
+.button--primary {
+  transition: all 200ms;
+  overflow: hidden;
+
+  &:hover {
+      background-color: #23c483;
+      box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+      color: $color--white;
+      border: 1px solid rgba(46, 229, 157, 0.4);
+      transform: translateY(-7px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+}
+
+
+

@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+@mixin d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin fontStyle ($fontFam, $fontWeight, $fontSize, $lineHeight, $color) {
+  font-family: $fontFam;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin button--width ($width){
+  width: $width;
+}

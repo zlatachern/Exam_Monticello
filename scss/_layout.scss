@@ -1,0 +1,162 @@
+@use 'helpers' as *;
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+}
+
+.header__box {
+  @include d-flex;
+  margin-top: 55px;
+}
+
+.navigation {
+  max-width: 515px;
+  &__list {
+    @include d-flex;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    &__list {
+      display: block;
+    }
+  }
+}
+
+.box-social {
+  max-width: 160px;
+  max-height: 50px;
+  display: flex;
+}
+
+.section-first {
+  padding-top: 130px;
+
+  &__box-card {
+    margin-top: 90px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-first {
+    padding-top: 90px;
+  
+    &__box-card {
+      margin-top: 50px;
+    }
+  }
+}
+
+.margin--topCard {
+  margin-top: 170px;
+}
+
+@media screen and (max-width: 768px) {
+  .margin--topCard {
+    margin-top: 100px;
+  }
+}
+
+.section-second {
+  margin-top: 150px;
+}
+
+.margin-top-avatar {
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .margin-top-avatar {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .margin-top-avatar {
+    margin-top: 44px;
+  }
+}
+
+.section__third {
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .section__third {
+    margin-top: 100px;
+  }
+}
+
+.gallery-box {
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 376px) {
+  .gallery-box {
+    margin-top: 40px;
+  }
+}
+
+.gallery-button {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.btn--gallery {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 376px) {
+  .btn--gallery {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.map--google {
+  width: 100%;
+}
+
+.info-footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 650px ;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 376px) {
+  .info-footer {
+    flex-direction: column;
+    max-width: 400px;
+  }
+}
+
+.box-social--footer,
+.logo-copyright {
+  margin-top: -150px;
+}
+
+@media screen and (max-width: 768px) {
+    .box-social--footer,
+    .logo-copyright {
+    margin-top: -250px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .box-social--footer {
+    margin-left: 90px;
+  }
+
+  .logo-copyright {
+    margin-left: 50px;
+  }
+}
